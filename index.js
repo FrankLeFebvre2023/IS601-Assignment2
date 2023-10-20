@@ -14,6 +14,7 @@ function checkPalindrome(){
     var notValid = pattern.test(number);
     if(notValid){
         alert("This is not a valid number. Please try again.");
+        document.getElementById("palForm").elements[0].value = '';
         return;
     }
     var num = parseInt(number);
